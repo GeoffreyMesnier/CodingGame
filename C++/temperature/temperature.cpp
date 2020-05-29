@@ -4,11 +4,7 @@
 #include <algorithm>
 
 using namespace std;
-
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
+// Initialise la temperature minimun
 int tempMin = 0;
 int main()
 {
@@ -27,9 +23,6 @@ int main()
                 tempMin = abs(t);
             }
         }
-
-    // Write an action using cout. DON'T FORGET THE "<< endl"
-    // To debug: cerr << "Debug messages..." << endl;
-
+    
     cout << tempMin << endl;
 }
