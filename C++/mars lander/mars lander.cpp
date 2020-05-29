@@ -5,11 +5,6 @@
 
 using namespace std;
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
-
 int main()
 {
     int surfaceN; // the number of points used to draw the surface of Mars.
@@ -19,10 +14,12 @@ int main()
         int landY; // Y coordinate of a surface point. By linking all the points together in a sequential fashion, you form the surface of Mars.
         cin >> landX >> landY; cin.ignore();
     }
+    
+    //Initialise la puissance
     int puissance = 0;
+    
     // game loop
     while (1) {
-
         int X;
         int Y;
         int hSpeed; // the horizontal speed (in m/s), can be negative.
@@ -37,14 +34,11 @@ int main()
         {
             puissance++ ;
         }
+        // Diminue la puissance
         else if (abs(vSpeed) < 10 and puissance > 0)
         {
             puissance-- ;
         }
-
-        // Write an action using cout. DON'T FORGET THE "<< endl"
-        // To debug: cerr << "Debug messages..." << endl;
-
 
         // 2 integers: rotate power. rotate is the desired rotation angle (should be 0 for level 1), power is the desired thrust power (0 to 4).
         cout << rotate <<" "<< puissance << endl;
