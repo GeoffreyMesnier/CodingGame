@@ -1,4 +1,5 @@
-game loop
+
+# game loop.
 while True:
    IndexCible = 0
    mountainMax = 0
@@ -9,8 +10,6 @@ while True:
        elif mountain_h > mountainMax:
            mountainMax = mountain_h
            IndexCible = i
-   # Write an action using print
-   # To debug: print("Debug messages...", file=sys.stderr)
-
+         
    # The index of the mountain to fire on.
    print(IndexCible)
